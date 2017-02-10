@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:alpine
 MAINTAINER Kevin Stobbelaar <kstobbelaar@gmail.com>
 
 # Install git
