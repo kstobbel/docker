@@ -8,5 +8,9 @@ RUN apk add git
 # Clone microservice implementation from github
 RUN git clone https://github.com/kstobbel/microservice-hello-node.git
 
-EXPOSE 8080
-CMD [ "npm", "start" ]
+# Go in to microservice directory and install dependencies
+WORKDIR /microservice-hello-node
+RUN npm install
+
+EXPOSE 3000
+CMD [ "npm", "node index.js" ]
