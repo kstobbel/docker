@@ -12,5 +12,5 @@ RUN git clone https://github.com/kstobbel/microservice-hello-node.git
 WORKDIR /microservice-hello-node
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 9000
 CMD [ "npm", "node index.js" ]
